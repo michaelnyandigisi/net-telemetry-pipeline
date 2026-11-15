@@ -1,0 +1,13 @@
+# Create a dashboard folder called Network
+# Look for dashboard JSON files in the specified directory.
+# - Automatically load dashboards from that directory.
+
+
+apiVersion: 1
+
+providers:
+  - name: default
+    folder: Network
+    type: file
+    options:
+      path: /etc/grafana/provisioning/dashboards

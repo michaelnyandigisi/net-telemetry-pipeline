@@ -1,0 +1,17 @@
+# Instructs Grafana how to connect to PostgreSQL using Docker's internal service name
+# Retrieves db password from .env file in grafana container.
+
+apiVersion: 1
+
+datasources:
+  - name: Telemetry
+    uid: Telemetry
+    type: postgres
+    url: postgres:5432
+    user: admin
+    secureJsonData:
+      password: ${POSTGRES_PASSWORD}
+    jsonData:
+      database: net_telemetry
+      sslmode: disable
+

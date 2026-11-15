@@ -11,8 +11,8 @@ CREATE TABLE IF NOT EXISTS speedtest_logs (
     download_speed FLOAT,
     upload_speed FLOAT,
     ping FLOAT,
-    jitter FLOAT,
+    jitter FLOAT
 );
 
-CREATE INDEX IF NOT EXISTS idx_speedtest_logs_timestamp
-ON speedtest_logs (timestamp);
+CREATE INDEX IF NOT EXISTS idx_speedtest_timestamp
+ON speedtest_logs(timestamp);

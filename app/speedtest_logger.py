@@ -18,7 +18,7 @@ def run_speedtest():
             "--format=json"
         ],
         capture_output=True,
-        text=True
+        text=True,
         timeout=120,
         check=True,
     )
@@ -65,9 +65,9 @@ def main():
     
     print("logged", row)
     
-    if __name__ == "__main__":
-        try:
-            main()
-        except Exception as exc:
-            print("Speedtest failed:", exc, file=sys.stderr)
-            sys.exit(1)
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as exc:
+        print("Speedtest failed:", exc, file=sys.stderr)
+        sys.exit(1)
