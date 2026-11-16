@@ -414,5 +414,3 @@ These are not implemented yet:
 **Michael Nyandigisi**
 
 - GitHub: [michaelnyandigisi](https://github.com/michaelnyandigisi)
-- LinkedIn: _add link_
-- Email: _add address_
